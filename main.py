@@ -1,4 +1,5 @@
 import tkinter as tk
+from math import e
 # Defining Buttons (Maybe could do this in a loop to make it easier, but it seems the lambda:add() command doesn't work
 # with Tkinter buttons or at least with the list comprehension I'm using
 
@@ -23,7 +24,22 @@ def b17(): en1.insert('end', '(')
 def b18(): en1.insert('end', ')')
 
 
+def b19():
+    """gets the previous number to know whether to multiply e or not"""
+    # 0 case
+    if len(en1.get()) == 0:
+        en1.insert('end', 'e')
+    else:
+        estring = en1.get()
+        estring = estring[-1]
+        if estring == '*':
+            en1.insert('end', 'e')
+        else:
+            en1.insert('end', '*e')
+
+
 def equal():
+    """Equals and checks for error"""
     try:
         answer = en1.get()
         en1.delete(0, 'end')
@@ -46,11 +62,11 @@ en1.grid(row=0, column=0, columnspan=3)
 eq1 = tk.Button(root, text='=', width=13, height=4, command=equal)
 eq1.grid(row='4', column='3', columnspan=2)
 
-buttons = ['*', '7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', '/', '.', 'AC', '(', ')']
-rows = ['0', '1', '1', '1', '1', '2', '2', '2', '2', '3', '3', '3', '3', '4', '0', '1', '2']
-columns = ['3', '0', '1', '2', '3', '0', '1', '2', '3', '0', '1', '2', '3', '2', '4', '4', '4']
-buttons2 = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9', 'b10', 'b11', 'b12', 'b13', 'b15', 'b16', 'b17', b'18']
-functions = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b15, b16, b17, b18]
+buttons = ['*', '7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', '/', '.', 'AC', '(', ')', 'e']
+rows = ['0', '1', '1', '1', '1', '2', '2', '2', '2', '3', '3', '3', '3', '4', '0', '1', '2', '3']
+columns = ['3', '0', '1', '2', '3', '0', '1', '2', '3', '0', '1', '2', '3', '2', '4', '4', '4', '4']
+buttons2 = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9', 'b10', 'b11', 'b12', 'b13', 'b15', 'b16', 'b17', b'18', 'b19']
+functions = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b15, b16, b17, b18 ,b19]
 
 for x, y, z, t, f in zip(buttons, rows, columns, buttons2, functions):
     t = tk.Button(root, text=x, width=6, height=4, command=f)
