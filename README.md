@@ -6,7 +6,6 @@ This is a calculator I built in High School that I added to and messed around wi
 
 * [Python](https://python.org/)
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -30,3 +29,4 @@ Project Link: [https://github.com/Josh2035/Calculator/](https://github.com/Josh2
 LinkedIn: [https://www.linkedin.com/in/joshua-hayes21/](https://www.linkedin.com/in/joshua-hayes21/)
 
 ## Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
