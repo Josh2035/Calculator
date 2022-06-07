@@ -29,4 +29,5 @@ Project Link: [https://github.com/Josh2035/Calculator/](https://github.com/Josh2
 LinkedIn: [https://www.linkedin.com/in/joshua-hayes21/](https://www.linkedin.com/in/joshua-hayes21/)
 
 ## Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+https://www.youtube.com/watch?v=p7a4SOY9Vz8
+3:33 to see the program run
