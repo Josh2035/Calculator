@@ -1,7 +1,3 @@
-## Video
-https://www.youtube.com/watch?v=p7a4SOY9Vz8
-3:33 to see the program run
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This is a calculator I built in High School that I added to and messed around with zipping list comprehension.
